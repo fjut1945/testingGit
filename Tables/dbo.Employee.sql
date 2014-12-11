@@ -18,7 +18,8 @@ CREATE TABLE [dbo].[Employee] (
 		[SickLeaveHours]        [smallint] NOT NULL,
 		[CurrentFlag]           [int] NOT NULL,
 		[rowguid]               [uniqueidentifier] NOT NULL ROWGUIDCOL,
-		[ModifiedDate]          [datetime] NOT NULL
+		[ModifiedDate]          [datetime] NOT NULL,
+		[test]                  [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
 ) ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[Employee]
